@@ -1,7 +1,7 @@
 // 홈 화면 앱용 서비스 워커. 앱 파일 전부를 기기에 담아 두어 인터넷 없이도 열리게 한다.
 // 새 버전을 올리면 다음에 열 때 새 파일을 받아 두고, 그다음 실행부터 새 버전이 열린다.
-const VERSION = 'daw-e3d78c8aff78';
-const FILES = ["./","./assets/index-Cnk8a6T6.css","./assets/index-DVK4SRm7.js","./assets/lamejs-DZQw-GQ8.js","./icon-180.png","./icon-192.png","./icon-512.png","./index.html","./manifest.webmanifest"];
+const VERSION = 'daw-086969574317';
+const FILES = ["./","./assets/index-C4wo1Q6r.js","./assets/index-Cnk8a6T6.css","./assets/lamejs-DZQw-GQ8.js","./icon-180.png","./icon-192.png","./icon-512.png","./index.html","./manifest.webmanifest"];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(VERSION).then((c) => c.addAll(FILES)).then(() => self.skipWaiting()));
